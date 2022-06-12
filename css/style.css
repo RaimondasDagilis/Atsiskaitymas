@@ -13,6 +13,7 @@ h2 {
 h3 {
   font-size: 40px;
   margin: 0;
+  line-height: 48.41px;
 }
 
 p {
@@ -37,7 +38,11 @@ button {
 }
 
 #button-container {
-  padding-left: 32px;
+  padding: 0 32px;
+}
+
+.orange-container {
+  padding: 0 32px;
 }
 
 header {
@@ -90,7 +95,7 @@ header .header-top nav .top-menu {
 
 header .header-bottom {
   padding-top: 80px;
-  height: 447px;
+  height: 450px;
 }
 
 header .header-bottom h1 {
@@ -106,5 +111,18 @@ header .header-bottom p {
   color: #555555;
   width: 274px;
   padding-bottom: 20px;
+}
+
+main .orange-section {
+  background-image: url(../img/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 327px;
+  background-position: -30vw;
+}
+
+main .orange-section h3 {
+  padding-top: 124px;
+  padding-bottom: 12px;
 }
 /*# sourceMappingURL=style.css.map */

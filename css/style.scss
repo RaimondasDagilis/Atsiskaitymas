@@ -25,6 +25,7 @@ h2 {
 h3 {
     font-size: $h3_text_size;
     margin: 0;
+    line-height: 48.41px;
 }
 
 p {
@@ -48,7 +49,11 @@ button {
 }
 
 #button-container {
-    padding-left: $padding_mobile;
+    padding: 0 $padding_mobile;
+}
+
+.orange-container {
+    padding: 0 $padding_mobile;
 }
 
 // Bendru nustatymu pabaiga
@@ -84,7 +89,7 @@ header {
 
     .header-bottom {
         padding-top: 80px;
-        height: 447px;
+        height: 450px;
 
         h1 {
             line-height: 58.09px;
@@ -99,6 +104,21 @@ header {
             color: #555555;
             width: 274px;
             padding-bottom: 20px;
+        }
+    }
+}
+
+main {
+    .orange-section {
+        background-image: url(../img/background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 327px;
+        background-position: -30vw;
+
+        h3 {
+            padding-top: 124px;
+            padding-bottom: 12px;
         }
     }
 }
