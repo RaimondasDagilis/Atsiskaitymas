@@ -282,4 +282,57 @@ main .zalias p {
   width: 60%;
   color: #555555;
 }
+
+footer {
+  padding: 62px 32px 0 32px;
+  height: 690px;
+}
+
+footer .social p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #555555;
+}
+
+footer .social .fa-brands {
+  font-size: 20px;
+  color: gray;
+  letter-spacing: 12px;
+}
+
+footer .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 27px;
+}
+
+footer .contacts div {
+  width: 50%;
+  color: #555555;
+}
+
+footer .contacts div p:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 28px;
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+
+footer .contacts div p:not(:first-child) {
+  padding-bottom: 10px;
+}
+
+footer #copyright {
+  padding-top: 45px;
+  color: #999999;
+}
 /*# sourceMappingURL=style.css.map */

@@ -253,3 +253,57 @@ main {
         }
     }
 }
+
+// Footeris
+
+footer {
+    padding: 62px $padding-mobile 0 $padding-mobile;
+    height: 690px;
+
+    .social {
+
+        p {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            color: #555555;
+        }
+
+        .fa-brands {
+            font-size: 20px;
+            color: gray;
+            letter-spacing: 12px;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 27px;
+
+        div {
+            width: 50%;
+            color: #555555;
+
+            p:first-child {
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+                padding-top: 28px;
+                padding-bottom: 15px;
+                font-size: 16px;
+            }
+
+            p:not(:first-child) {
+                padding-bottom: 10px;
+            }
+
+        }
+
+    }
+
+    #copyright {
+        padding-top: 45px;
+        color: #999999;
+    }
+}
