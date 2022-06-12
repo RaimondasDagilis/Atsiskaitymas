@@ -50,6 +50,7 @@ button {
 
 #button-container {
     padding: 0 $padding_mobile;
+    border: none;
 }
 
 .orange-container {
@@ -145,7 +146,8 @@ main {
     }
 
     .aukcionas {
-        padding: 52px $padding_mobile 85px $padding_mobile;
+        padding: 52px $padding_mobile 0 $padding_mobile;
+        height: 735px;
 
         p {
             padding-top: 15px;
@@ -208,6 +210,46 @@ main {
                     color: #777777;
                 }
             }
+        }
+    }
+
+    .zalias {
+        background-image: url(../img/upsell-footer-image.svg);
+        background-repeat: no-repeat;
+        background-position: 60vw bottom;
+
+        div {
+            border: 1px solid lightgray;
+        }
+
+        div:first-child {
+            border-bottom: none;
+            height: 328px;
+        }
+
+        div:nth-child(2) {
+            height: 300px;
+        }
+
+        h1 {
+            padding-left: $padding_mobile;
+            width: 60%;
+            font-size: 56px;
+            line-height: 67.77px;
+        }
+
+        h2 {
+            padding-top: 63px;
+            padding-bottom: 25px;
+            padding-left: $padding_mobile;
+        }
+
+        p {
+            padding-left: $padding_mobile;
+            padding-bottom: 40px;
+            width: 60%;
+            color: #555555;
+
         }
     }
 }

@@ -39,6 +39,7 @@ button {
 
 #button-container {
   padding: 0 32px;
+  border: none;
 }
 
 .orange-container {
@@ -159,7 +160,8 @@ main .companies #pc {
 }
 
 main .aukcionas {
-  padding: 52px 32px 85px 32px;
+  padding: 52px 32px 0 32px;
+  height: 735px;
 }
 
 main .aukcionas p {
@@ -240,5 +242,44 @@ main .aukcionas .container .card-footer .row-2 {
 
 main .aukcionas .container .card-footer .row-3 {
   color: #777777;
+}
+
+main .zalias {
+  background-image: url(../img/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-position: 60vw bottom;
+}
+
+main .zalias div {
+  border: 1px solid lightgray;
+}
+
+main .zalias div:first-child {
+  border-bottom: none;
+  height: 328px;
+}
+
+main .zalias div:nth-child(2) {
+  height: 300px;
+}
+
+main .zalias h1 {
+  padding-left: 32px;
+  width: 60%;
+  font-size: 56px;
+  line-height: 67.77px;
+}
+
+main .zalias h2 {
+  padding-top: 63px;
+  padding-bottom: 25px;
+  padding-left: 32px;
+}
+
+main .zalias p {
+  padding-left: 32px;
+  padding-bottom: 40px;
+  width: 60%;
+  color: #555555;
 }
 /*# sourceMappingURL=style.css.map */
