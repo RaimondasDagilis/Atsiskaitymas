@@ -1,0 +1,110 @@
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FF3998;
+  margin: 0;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+button {
+  width: 188px;
+  height: 75px;
+  border-radius: 75px;
+  background-color: transparent;
+  border: solid 5px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF3998, #FF8139);
+  background-origin: border-box;
+  -webkit-box-shadow: 2px 1000px 1px #fff inset;
+          box-shadow: 2px 1000px 1px #fff inset;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#button-container {
+  padding-left: 32px;
+}
+
+header {
+  margin: 0px;
+  padding: 32px;
+}
+
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-top nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-top nav .fa-bars {
+  font-size: 29px;
+  font-weight: bold;
+  color: #999999;
+  margin: 0;
+}
+
+header .header-top nav .top-menu {
+  display: none;
+}
+
+header .header-bottom {
+  padding-top: 80px;
+  height: 447px;
+}
+
+header .header-bottom h1 {
+  line-height: 58.09px;
+  padding-bottom: 27px;
+}
+
+header .header-bottom h2 {
+  padding-bottom: 30px;
+}
+
+header .header-bottom p {
+  color: #555555;
+  width: 274px;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
