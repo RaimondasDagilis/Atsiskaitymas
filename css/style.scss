@@ -121,4 +121,93 @@ main {
             padding-bottom: 12px;
         }
     }
+
+    .companies {
+        padding: 65px $padding_mobile 0 $padding_mobile;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 20px;
+
+        div {
+            width: 50%;
+        }
+
+        #short {
+            content: url(../img/companies/1-short.svg);
+        }
+
+        #pc {
+            display: none;
+        }
+    }
+
+    .aukcionas {
+        padding: 52px $padding_mobile 85px $padding_mobile;
+
+        p {
+            padding-top: 15px;
+            padding-bottom: 40px;
+            color: #555555;
+        }
+
+        a {
+            color: #555555;
+        }
+
+        .container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+
+            .card {
+                display: inline-block;
+                border-radius: 17px;
+                background-color: #EEEEEE;
+                width: 290px;
+                height: 400px;
+            }
+
+            .card-footer {
+                display: flex;
+                flex-direction: column;
+                padding: 0 24px;
+
+                p {
+                    padding: 0;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .row-1 {
+                    font-variant: small-caps;
+
+                    p {
+                        color: #777777;
+                    }
+
+                    p:first-child {
+                        color: #FF8139;
+                    }
+                }
+
+                .row-2 {
+                    font-weight: bold;
+                }
+
+                .row-3 {
+                    color: #777777;
+                }
+            }
+        }
+    }
 }
