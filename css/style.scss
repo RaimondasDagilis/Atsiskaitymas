@@ -6,10 +6,7 @@ $h2_text_size: 16px;
 $h3_text_size: 40px;
 $p_text_size: 20px;
 
-$h2_color : #FF3998;
-
 // Bendri nustatymai
-
 h1 {
     font-size: $h1_text_size;
     margin: 0;
@@ -18,7 +15,7 @@ h1 {
 h2 {
     font-size: $h2_text_size;
     text-transform: uppercase;
-    color: $h2_color;
+    color: #FF3998;
     margin: 0;
 }
 
@@ -219,7 +216,8 @@ main {
         background-position: 60vw bottom;
 
         div {
-            border: 1px solid lightgray;
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
         }
 
         div:first-child {
@@ -305,5 +303,86 @@ footer {
     #copyright {
         padding-top: 45px;
         color: #999999;
+    }
+}
+
+@media (min-width: 860px) {
+
+    header {
+        .header-top {
+            nav {
+                .top-menu {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 28px;
+
+                    a {
+                        font-size: 20px;
+                        color: #555555;
+                        text-decoration: none;
+                    }
+
+                    a:last-child {
+                        color: #FF3998;
+                    }
+                }
+
+                .fa-bars {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    main {
+
+        .orange-section {
+            border-radius: 17px;
+            background-position: 0;
+        }
+
+        .companies {
+            flex-wrap: nowrap;
+
+            div {
+                width: auto;
+            }
+
+            #short {
+                content: url(../img/companies/1.svg);
+            }
+
+            #pc {
+                display: block;
+            }
+        }
+
+        .zalias {
+
+            div:nth-child(2) {
+                height: 300px;
+                border-top: none;
+            }
+        }
+    }
+
+    footer {
+
+        height: auto;
+
+        .footer-top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .contacts {
+                flex-wrap: nowrap;
+                width: 50%;
+            }
+
+            .social {
+                width: 50%;
+            }
+        }
     }
 }

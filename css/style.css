@@ -251,7 +251,8 @@ main .zalias {
 }
 
 main .zalias div {
-  border: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 main .zalias div:first-child {
@@ -334,5 +335,73 @@ footer .contacts div p:not(:first-child) {
 footer #copyright {
   padding-top: 45px;
   color: #999999;
+}
+
+@media (min-width: 860px) {
+  header .header-top nav .top-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 28px;
+  }
+  header .header-top nav .top-menu a {
+    font-size: 20px;
+    color: #555555;
+    text-decoration: none;
+  }
+  header .header-top nav .top-menu a:last-child {
+    color: #FF3998;
+  }
+  header .header-top nav .fa-bars {
+    display: none;
+  }
+  main .orange-section {
+    border-radius: 17px;
+    background-position: 0;
+  }
+  main .companies {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  main .companies div {
+    width: auto;
+  }
+  main .companies #short {
+    content: url(../img/companies/1.svg);
+  }
+  main .companies #pc {
+    display: block;
+  }
+  main .zalias div:nth-child(2) {
+    height: 300px;
+    border-top: none;
+  }
+  footer {
+    height: auto;
+  }
+  footer .footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-top .contacts {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 50%;
+  }
+  footer .footer-top .social {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
