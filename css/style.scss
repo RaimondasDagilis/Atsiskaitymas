@@ -58,7 +58,7 @@ button {
 
 header {
     margin: 0px;
-    padding: $padding_mobile;
+    padding: $padding_mobile 0 $padding_mobile $padding_mobile;
 
     .header-top {
         display: flex;
@@ -73,6 +73,7 @@ header {
             align-items: center;
 
             .fa-bars {
+                padding-right: $padding_mobile;
                 font-size: 29px;
                 font-weight: bold;
                 color: #999999;
@@ -89,6 +90,12 @@ header {
         padding-top: 80px;
         height: 450px;
 
+        background-image: url("../img/graphic.png");
+        background-size: 65vw;
+        background-repeat: no-repeat;
+        background-position: 250px;
+
+
         h1 {
             line-height: 58.09px;
             padding-bottom: 27px;
@@ -103,6 +110,7 @@ header {
             width: 274px;
             padding-bottom: 20px;
         }
+
     }
 }
 
@@ -112,7 +120,7 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
         height: 327px;
-        background-position: -30vw;
+        background-position: -50px;
 
         h3 {
             padding-top: 124px;
@@ -216,8 +224,8 @@ main {
         background-position: 60vw bottom;
 
         div {
-            border-top: 1px solid lightgray;
-            border-bottom: 1px solid lightgray;
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
         }
 
         div:first-child {
@@ -303,12 +311,21 @@ footer {
     #copyright {
         padding-top: 45px;
         color: #999999;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p:last-child {
+            display: none;
+        }
     }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 1050px) {
 
     header {
+        padding-left: $padding_pc;
+
         .header-top {
             nav {
                 .top-menu {
@@ -324,6 +341,7 @@ footer {
 
                     a:last-child {
                         color: #FF3998;
+                        padding-right: $padding_pc;
                     }
                 }
 
@@ -332,9 +350,21 @@ footer {
                 }
             }
         }
+
+        .header-bottom {
+            background-size: 519px;
+            background-position: 40vw;
+
+            h1 {
+                font-size: 6.6vw;
+            }
+        }
+
     }
 
     main {
+        padding-left: $padding_pc;
+        padding-right: $padding_pc;
 
         .orange-section {
             border-radius: 17px;
@@ -343,6 +373,8 @@ footer {
 
         .companies {
             flex-wrap: nowrap;
+            padding-left: 0;
+            padding-right: 0;
 
             div {
                 width: auto;
@@ -357,17 +389,47 @@ footer {
             }
         }
 
-        .zalias {
+        .aukcionas {
+            padding-left: 0;
+            padding-right: 0;
+        }
 
-            div:nth-child(2) {
-                height: 300px;
-                border-top: none;
+        .zalias {
+            height: 550px;
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+
+            h1 {
+                padding-left: 0;
+                padding-right: 0;
             }
+
+            h2 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            p {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            div {
+                height: auto;
+                border: none;
+
+                #button-container {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
         }
     }
 
     footer {
-
+        padding-left: $padding_pc;
+        padding-right: $padding_pc;
         height: auto;
 
         .footer-top {
@@ -384,5 +446,15 @@ footer {
                 width: 50%;
             }
         }
+
+        #copyright {
+            p:last-child {
+                display: block;
+            }
+        }
+
     }
+
+
+
 }

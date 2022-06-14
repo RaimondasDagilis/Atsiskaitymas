@@ -48,7 +48,7 @@ button {
 
 header {
   margin: 0px;
-  padding: 32px;
+  padding: 32px 0 32px 32px;
 }
 
 header .header-top {
@@ -84,6 +84,7 @@ header .header-top nav {
 }
 
 header .header-top nav .fa-bars {
+  padding-right: 32px;
   font-size: 29px;
   font-weight: bold;
   color: #999999;
@@ -97,6 +98,10 @@ header .header-top nav .top-menu {
 header .header-bottom {
   padding-top: 80px;
   height: 450px;
+  background-image: url("../img/graphic.png");
+  background-size: 65vw;
+  background-repeat: no-repeat;
+  background-position: 250px;
 }
 
 header .header-bottom h1 {
@@ -119,7 +124,7 @@ main .orange-section {
   background-size: cover;
   background-repeat: no-repeat;
   height: 327px;
-  background-position: -30vw;
+  background-position: -50px;
 }
 
 main .orange-section h3 {
@@ -251,8 +256,8 @@ main .zalias {
 }
 
 main .zalias div {
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 main .zalias div:first-child {
@@ -335,9 +340,26 @@ footer .contacts div p:not(:first-child) {
 footer #copyright {
   padding-top: 45px;
   color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media (min-width: 860px) {
+footer #copyright p:last-child {
+  display: none;
+}
+
+@media (min-width: 1050px) {
+  header {
+    padding-left: 80px;
+  }
   header .header-top nav .top-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -355,9 +377,21 @@ footer #copyright {
   }
   header .header-top nav .top-menu a:last-child {
     color: #FF3998;
+    padding-right: 80px;
   }
   header .header-top nav .fa-bars {
     display: none;
+  }
+  header .header-bottom {
+    background-size: 519px;
+    background-position: 40vw;
+  }
+  header .header-bottom h1 {
+    font-size: 6.6vw;
+  }
+  main {
+    padding-left: 80px;
+    padding-right: 80px;
   }
   main .orange-section {
     border-radius: 17px;
@@ -366,6 +400,8 @@ footer #copyright {
   main .companies {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 0;
   }
   main .companies div {
     width: auto;
@@ -376,11 +412,38 @@ footer #copyright {
   main .companies #pc {
     display: block;
   }
-  main .zalias div:nth-child(2) {
-    height: 300px;
-    border-top: none;
+  main .aukcionas {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main .zalias {
+    height: 550px;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+  }
+  main .zalias h1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main .zalias h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main .zalias p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main .zalias div {
+    height: auto;
+    border: none;
+  }
+  main .zalias div #button-container {
+    padding-left: 0;
+    padding-right: 0;
   }
   footer {
+    padding-left: 80px;
+    padding-right: 80px;
     height: auto;
   }
   footer .footer-top {
@@ -402,6 +465,9 @@ footer #copyright {
   }
   footer .footer-top .social {
     width: 50%;
+  }
+  footer #copyright p:last-child {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
