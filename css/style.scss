@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter.ttf);
+}
+
+body,
+html {
+    font-family: Inter;
+}
+
 $padding_mobile: 32px;
 $padding_pc: 80px;
 
@@ -86,7 +96,7 @@ header {
 
     .header-bottom {
         padding-top: 80px;
-        height: 450px;
+        min-height: 450px;
 
         background-image: url("../img/graphic.png");
         background-size: 65vw;
@@ -95,7 +105,8 @@ header {
 
 
         h1 {
-            line-height: 58.09px;
+            font-weight: 900;
+
             padding-bottom: 27px;
         }
 

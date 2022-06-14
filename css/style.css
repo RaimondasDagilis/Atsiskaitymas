@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter.ttf);
+}
+
+body,
+html {
+  font-family: Inter;
+}
+
 h1 {
   font-size: 48px;
   margin: 0;
@@ -97,7 +107,7 @@ header .header-top nav .top-menu {
 
 header .header-bottom {
   padding-top: 80px;
-  height: 450px;
+  min-height: 450px;
   background-image: url("../img/graphic.png");
   background-size: 65vw;
   background-repeat: no-repeat;
@@ -105,7 +115,7 @@ header .header-bottom {
 }
 
 header .header-bottom h1 {
-  line-height: 58.09px;
+  font-weight: 900;
   padding-bottom: 27px;
 }
 
