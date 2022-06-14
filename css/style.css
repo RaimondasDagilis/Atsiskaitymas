@@ -324,7 +324,7 @@ footer .contacts div {
   color: #555555;
 }
 
-footer .contacts div p:first-child {
+footer .contacts div p {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
@@ -333,8 +333,24 @@ footer .contacts div p:first-child {
   font-size: 16px;
 }
 
-footer .contacts div p:not(:first-child) {
+footer .contacts div .linkai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .contacts div .linkai a {
   padding-bottom: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #555555;
 }
 
 footer #copyright {

@@ -291,7 +291,7 @@ footer {
             width: 50%;
             color: #555555;
 
-            p:first-child {
+            p {
                 text-transform: uppercase;
                 font-weight: bold;
                 letter-spacing: 1px;
@@ -300,8 +300,21 @@ footer {
                 font-size: 16px;
             }
 
-            p:not(:first-child) {
-                padding-bottom: 10px;
+            .linkai {
+
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding-bottom: 10px;
+                    text-decoration: none;
+                    font-size: $p_text_size;
+                    margin: 0;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                    color: #555555;
+
+                }
             }
 
         }
