@@ -54,8 +54,6 @@ button {
     padding: 0 $padding_mobile;
 }
 
-// Bendru nustatymu pabaiga
-
 header {
     margin: 0px;
     padding: $padding_mobile 0 $padding_mobile $padding_mobile;
@@ -260,8 +258,6 @@ main {
     }
 }
 
-// Footeris
-
 footer {
     padding: 62px $padding-mobile 0 $padding-mobile;
     height: 690px;
@@ -316,9 +312,7 @@ footer {
 
                 }
             }
-
         }
-
     }
 
     #copyright {
@@ -372,7 +366,6 @@ footer {
                 font-size: 6.6vw;
             }
         }
-
     }
 
     main {
@@ -436,7 +429,6 @@ footer {
                     padding-right: 0;
                 }
             }
-
         }
     }
 
@@ -465,9 +457,5 @@ footer {
                 display: block;
             }
         }
-
     }
-
-
-
 }
