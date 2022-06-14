@@ -1,0 +1,461 @@
+$padding_mobile: 32px;
+$padding_pc: 80px;
+
+$h1_text_size: 48px;
+$h2_text_size: 16px;
+$h3_text_size: 40px;
+$p_text_size: 20px;
+
+// Bendri nustatymai
+h1 {
+    font-size: $h1_text_size;
+    margin: 0;
+}
+
+h2 {
+    font-size: $h2_text_size;
+    text-transform: uppercase;
+    color: #FF3998;
+    margin: 0;
+}
+
+h3 {
+    font-size: $h3_text_size;
+    margin: 0;
+    line-height: 48.41px;
+}
+
+p {
+    font-size: $p_text_size;
+    margin: 0;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+button {
+    width: 188px;
+    height: 75px;
+    border-radius: 75px;
+    background-color: transparent;
+    border: solid 5px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF3998, #FF8139);
+    background-origin: border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#button-container {
+    padding: 0 $padding_mobile;
+    border: none;
+}
+
+.orange-container {
+    padding: 0 $padding_mobile;
+}
+
+header {
+    margin: 0px;
+    padding: $padding_mobile 0 $padding_mobile $padding_mobile;
+
+    .header-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .fa-bars {
+                padding-right: $padding_mobile;
+                font-size: 29px;
+                font-weight: bold;
+                color: #999999;
+                margin: 0;
+            }
+
+            .top-menu {
+                display: none;
+            }
+        }
+    }
+
+    .header-bottom {
+        padding-top: 80px;
+        height: 450px;
+
+        background-image: url("../img/graphic.png");
+        background-size: 65vw;
+        background-repeat: no-repeat;
+        background-position: 250px;
+
+
+        h1 {
+            line-height: 58.09px;
+            padding-bottom: 27px;
+        }
+
+        h2 {
+            padding-bottom: 30px;
+        }
+
+        p {
+            color: #555555;
+            width: 274px;
+            padding-bottom: 20px;
+        }
+
+    }
+}
+
+main {
+    .orange-section {
+        background-image: url(../img/background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 327px;
+        background-position: -50px;
+
+        h3 {
+            padding-top: 124px;
+            padding-bottom: 12px;
+        }
+    }
+
+    .companies {
+        padding: 65px $padding_mobile 0 $padding_mobile;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 20px;
+
+        div {
+            width: 50%;
+        }
+
+        #short {
+            content: url(../img/companies/1-short.svg);
+        }
+
+        #pc {
+            display: none;
+        }
+    }
+
+    .aukcionas {
+        padding: 52px $padding_mobile 0 $padding_mobile;
+        height: 735px;
+
+        p {
+            padding-top: 15px;
+            padding-bottom: 40px;
+            color: #555555;
+        }
+
+        a {
+            color: #555555;
+        }
+
+        .container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+
+            .card {
+                display: inline-block;
+                border-radius: 17px;
+                background-color: #EEEEEE;
+                width: 290px;
+                height: 400px;
+            }
+
+            .card-footer {
+                display: flex;
+                flex-direction: column;
+                padding: 0 24px;
+
+                p {
+                    padding: 0;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .row-1 {
+                    font-variant: small-caps;
+
+                    p {
+                        color: #777777;
+                    }
+
+                    p:first-child {
+                        color: #FF8139;
+                    }
+                }
+
+                .row-2 {
+                    font-weight: bold;
+                }
+
+                .row-3 {
+                    color: #777777;
+                }
+            }
+        }
+    }
+
+    .zalias {
+        background-image: url(../img/upsell-footer-image.svg);
+        background-repeat: no-repeat;
+        background-position: 60vw bottom;
+
+        div {
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+        }
+
+        div:first-child {
+            border-bottom: none;
+            height: 328px;
+        }
+
+        div:nth-child(2) {
+            height: 300px;
+        }
+
+        h1 {
+            padding-left: $padding_mobile;
+            width: 60%;
+            font-size: 56px;
+            line-height: 67.77px;
+        }
+
+        h2 {
+            padding-top: 63px;
+            padding-bottom: 25px;
+            padding-left: $padding_mobile;
+        }
+
+        p {
+            padding-left: $padding_mobile;
+            padding-bottom: 40px;
+            width: 60%;
+            color: #555555;
+
+        }
+    }
+}
+
+footer {
+    padding: 62px $padding-mobile 0 $padding-mobile;
+    height: 690px;
+
+    .social {
+
+        p {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            color: #555555;
+        }
+
+        .fa-brands {
+            font-size: 20px;
+            color: gray;
+            letter-spacing: 12px;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 27px;
+
+        div {
+            width: 50%;
+            color: #555555;
+
+            p {
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+                padding-top: 28px;
+                padding-bottom: 15px;
+                font-size: 16px;
+            }
+
+            .linkai {
+
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding-bottom: 10px;
+                    text-decoration: none;
+                    font-size: $p_text_size;
+                    margin: 0;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                    color: #555555;
+
+                }
+            }
+        }
+    }
+
+    #copyright {
+        padding-top: 45px;
+        color: #999999;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p:last-child {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1050px) {
+
+    header {
+        padding-left: $padding_pc;
+
+        .header-top {
+            nav {
+                .top-menu {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 28px;
+
+                    a {
+                        font-size: 20px;
+                        color: #555555;
+                        text-decoration: none;
+                    }
+
+                    a:last-child {
+                        color: #FF3998;
+                        padding-right: $padding_pc;
+                    }
+                }
+
+                .fa-bars {
+                    display: none;
+                }
+            }
+        }
+
+        .header-bottom {
+            background-size: 519px;
+            background-position: 40vw;
+
+            h1 {
+                font-size: 6.6vw;
+            }
+        }
+    }
+
+    main {
+        padding-left: $padding_pc;
+        padding-right: $padding_pc;
+
+        .orange-section {
+            border-radius: 17px;
+            background-position: 0;
+        }
+
+        .companies {
+            flex-wrap: nowrap;
+            padding-left: 0;
+            padding-right: 0;
+
+            div {
+                width: auto;
+            }
+
+            #short {
+                content: url(../img/companies/1.svg);
+            }
+
+            #pc {
+                display: block;
+            }
+        }
+
+        .aukcionas {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .zalias {
+            height: 550px;
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+
+            h1 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            h2 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            p {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            div {
+                height: auto;
+                border: none;
+
+                #button-container {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-left: $padding_pc;
+        padding-right: $padding_pc;
+        height: auto;
+
+        .footer-top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .contacts {
+                flex-wrap: nowrap;
+                width: 50%;
+            }
+
+            .social {
+                width: 50%;
+            }
+        }
+
+        #copyright {
+            p:last-child {
+                display: block;
+            }
+        }
+    }
+}
