@@ -4,4 +4,4 @@
 Puslapio dizainą, kurį reikia atkurti, rasite Figma puslapyje. Nuoroda pateikta žemiau:
 https://www.figma.com/file/AXFJWF3FUeEn9ppEuuXORE/NFT-Startup-Landing-Page?node-id=0%3A1
   
-Rezultatas : https://bimbamas.github.io/Atsiskaitymas/
+Rezultatas : https://raimondasdagilis.github.io/Atsiskaitymas/
